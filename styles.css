@@ -8,12 +8,14 @@ body, html {
 #container {
     display: grid;
     grid-template: 200px auto / 200px auto;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #header {
     background-color: lightgrey;
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: 1fr 2fr / 2fr 1fr;
 }
 
 #sidebar {
@@ -30,25 +32,60 @@ body, html {
     min-width: 400px;
     min-height: 400px;
     display: grid;
-    grid-template: 50% 50% / 1fr 200px;
-}
-
-#projects {
-    grid-area: 1 / 1 / 3 / 2;
-}
-
-#announcements {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-#trending {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto;
+    padding: 20px;
 }
 
 #main-content .header {
 
 }
 
+#projects {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#project-cards {
+    display: grid;
+    grid-auto-rows: min(200px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-right: 20px;
+}
+
 #projects .card {
-    
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#announcements {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#announcement-cards {
+    background-color: white;
+    padding: 20px;
+    display: grid;
+}
+
+#trending {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#trending-cards {
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    gap: 20px
+}
+
+#trending-cards .card {
+    display: grid;
+    grid-template: 50% 50% / auto 1fr;
+}
+
+#trending-cards .card .avatar {
+    grid-area: 1 / 1 / 3 / 2;
 }
