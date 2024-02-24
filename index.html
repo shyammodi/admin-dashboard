@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
         <div id="header">
             <div id="searchbar">
-                <img src="" alt="search icon">
+                <img src="images/magnify.svg" alt="search icon">
                 <input type="text">
             </div>
             <div id="userbuttons">
-                <img src="" alt="notifications icon">
-                <img src="" alt="user avatar">
+                <img src="images/bell-ring-outline.svg" class="mediumicon" alt="notifications icon">
+                <img src="images/avatar.svg" class="bigicon" alt="user avatar">
                 <span id="user-info-name">Morgan Oakley</span>
             </div>
             <div id="userinfo">
-                <img src="" alt="user-avatar">
-                <span id="greeting">Hi there,</span>
-                <span id="user-name-at-handle">Morgan Oakley (@morgan)</span>
+                <div id="userinfo-grid">
+                    <img id="userinfo-avatar" src="images/avatar.svg" alt="user-avatar">
+                    <span id="greeting">Hi there,</span>
+                    <span id="user-name-at-handle">Morgan Oakley (@morgan)</span>
+                </div>
+
             </div>
             <div id="actionbuttons">
                 <button>New</button>
@@ -31,47 +37,47 @@
         </div>
 
         <div id="sidebar">
-            <div id="branding">
-                <img src="" alt="dashboard image">
+            <div id="branding" class="navitem">
+                <img src="images/view-dashboard.svg" alt="dashboard image">
                 <span>Dashboard</span>
             </div>
             <div id="mainnav">
                 <div class="navitem">
-                    <img src="" alt="home image">
+                    <img src="images/home.svg" alt="home image">
                     <span>Home</span>
                 </div>
                 <div class="navitem">
-                    <img src="" alt="profile image">
+                    <img src="images/card-account-details.svg" alt="profile image">
                     <span>Profile</span>
                 </div>
                 <div class="navitem">
-                    <img src="" alt="messages image">
+                    <img src="images/message.svg" alt="messages image">
                     <span>Messages</span>
                 </div>
                 <div class="navitem">
-                    <img src="" alt="history image">
+                    <img src="images/clock-time-three.svg" alt="history image">
                     <span>History</span>
                 </div>
                 <div class="navitem">
-                    <img src="" alt="tasks image">
+                    <img src="images/file-multiple.svg" alt="tasks image">
                     <span>Tasks</span>
                 </div>
                 <div class="navitem">
-                    <img src="" alt="communities image">
+                    <img src="images/account-group.svg" alt="communities image">
                     <span>Communities</span>
                 </div>
             </div>
             <div id="secondarynav">
                 <div class="navitem">
-                    <img src="" alt="settings image">
+                    <img src="images/cog.svg" alt="settings image">
                     <span>Settings</span>
                 </div>
                 <div class="navitem">
-                    <img src="" alt="support image">
+                    <img src="images/help-box.svg" alt="support image">
                     <span>Support</span>
                 </div>
                 <div class="navitem">
-                    <img src="" alt="privacy image">
+                    <img src="images/shield-check.svg" alt="privacy image">
                     <span>Privacy</span>
                 </div>
 
@@ -85,54 +91,54 @@
                         <p class="card-header">Super Cool Project</p>
                         <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet nulla mattis, euismod elit fringilla, tempor elit. Quisque mattis metus odio, sit amet mollis arcu consectetur nec. Donec viverra lorem arcu, ac sollicitudin lectus varius nec. Integer quam lorem, sollicitudin vel tincidunt vel </p>
                         <div class="card-icons">
-                            <img src="" alt="favorite">
-                            <img src="" alt="follow">
-                            <img src="" alt="share">
+                            <img src="images/star-plus-outline.svg" alt="favorite">
+                            <img src="images/eye-plus-outline.svg" alt="follow">
+                            <img src="images/share-variant-outline.svg" alt="share">
                         </div>
                     </div>
                     <div class="card">
                         <p class="card-header">Less Cool Project</p>
                         <p class="card-description">Sed ultricies tortor eget maximus mattis. Integer diam arcu, consectetur ac magna eget, pellentesque aliquet ligula. Suspendisse faucibus fermentum egestas. Morbi sollicitudin diam vel turpis pharetra congue. Nulla a nulla pretium diam placerat hendrerit tincidunt scelerisque tortor.</p>
                         <div class="card-icons">
-                            <img src="" alt="favorite">
-                            <img src="" alt="follow">
-                            <img src="" alt="share">
+                            <img src="images/star-plus-outline.svg" alt="favorite">
+                            <img src="images/eye-plus-outline.svg" alt="follow">
+                            <img src="images/share-variant-outline.svg" alt="share">
                         </div>
                     </div>
                     <div class="card">
                         <p class="card-header">Impossible App</p>
                         <p class="card-description">Pellentesque mollis imperdiet est. Vestibulum et dolor luctus, viverra turpis sit amet, feugiat ligula. Quisque sodales velit mi, nec suscipit leo rhoncus aliquet.</p>
                         <div class="card-icons">
-                            <img src="" alt="favorite">
-                            <img src="" alt="follow">
-                            <img src="" alt="share">
+                            <img src="images/star-plus-outline.svg" alt="favorite">
+                            <img src="images/eye-plus-outline.svg" alt="follow">
+                            <img src="images/share-variant-outline.svg" alt="share">
                         </div>
                     </div>
                     <div class="card">
                         <p class="card-header">Easy Peasy App</p>
                         <p class="card-description"> In vehicula, dolor nec aliquet interdum, justo nisl convallis magna, a varius mauris nunc scelerisque elit. Proin faucibus libero non est fermentum finibus.</p>
                         <div class="card-icons">
-                            <img src="" alt="favorite">
-                            <img src="" alt="follow">
-                            <img src="" alt="share">
+                            <img src="images/star-plus-outline.svg" alt="favorite">
+                            <img src="images/eye-plus-outline.svg" alt="follow">
+                            <img src="images/share-variant-outline.svg" alt="share">
                         </div>
                     </div>
                     <div class="card">
                         <p class="card-header">Ad Blocker</p>
                         <p class="card-description">Nullam lorem risus, malesuada et ipsum nec, sagittis vehicula ligula. In luctus dolor ut dolor euismod dapibus. Donec eu venenatis purus. Integer mollis dui vitae fermentum volutpat.</p>
                         <div class="card-icons">
-                            <img src="" alt="favorite">
-                            <img src="" alt="follow">
-                            <img src="" alt="share">
+                            <img src="images/star-plus-outline.svg" alt="favorite">
+                            <img src="images/eye-plus-outline.svg" alt="follow">
+                            <img src="images/share-variant-outline.svg" alt="share">
                         </div>
                     </div>
                     <div class="card">
                         <p class="card-header">Money Maker</p>
                         <p class="card-description">Aliquam ut neque ipsum. Suspendisse nulla erat, varius a ornare et, ullamcorper ut neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                         <div class="card-icons">
-                            <img src="" alt="favorite">
-                            <img src="" alt="follow">
-                            <img src="" alt="share">
+                            <img src="images/star-plus-outline.svg" alt="favorite">
+                            <img src="images/eye-plus-outline.svg" alt="follow">
+                            <img src="images/share-variant-outline.svg" alt="share">
                         </div>
                     </div>
                 </div>
@@ -148,7 +154,7 @@
                         <p class="card-header">Community Share Day</p>
                         <p class="card-description">Suspendisse porttitor enim erat, congue imperdiet tortor ullamcorper eget. Donec commodo mollis consequat.</p>
                     </div>
-                    <div class="card">
+                    <div class="card lastcard">
                         <p class="card-header">Updated Privacy Policy</p>
                         <p class="card-description">Curabitur in pellentesque neque. Nullam venenatis turpis posuere rutrum consectetur. </p>
                     </div>
@@ -158,22 +164,22 @@
                 <p class="header">Trending</p>
                 <div id="trending-cards">
                     <div class="card">
-                        <img class="avatar" src="" alt="tegan avatar">
+                        <img class="avatar" src="images/avatar (1).svg" alt="tegan avatar">
                         <span class="at-handle">@tegan</span>
                         <span class="description">World Peace Builder</span>
                     </div>
                     <div class="card">
-                        <img class="avatar" src="" alt="morgan avatar">
+                        <img class="avatar" src="images/avatar.svg" alt="morgan avatar">
                         <span class="at-handle">@morgan</span>
                         <span class="description">Super Cool Project</span>
                     </div>
                     <div class="card">
-                        <img class="avatar" src="" alt="kendall avatar">
+                        <img class="avatar" src="images/avatar (2).svg" alt="kendall avatar">
                         <span class="at-handle">@kendall</span>
                         <span class="description">Life Changing App</span>
                     </div>
                     <div class="card">
-                        <img class="avatar" src="" alt="alex avatar">
+                        <img class="avatar" src="images/avatar (3).svg" alt="alex avatar">
                         <span class="at-handle">@alex</span>
                         <span class="description">No Traffic Maker</span>
                     </div>
